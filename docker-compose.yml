@@ -1,0 +1,12 @@
+services:
+  app:
+    image: reg1.aldy.ir/devops/base/golang:bullseye
+    volumes:
+      - .:/workspace
+      - /home/pc/go:/go
+      - /home/pc/.ssh:/root/.ssh
+      - /home/pc/.gitconfig:/root/.gitconfig
+      - /home/pc/.netrc:/root/.netrc
+    environment:
+      GOPRIVATE: 'github.com/parsidev'
+
