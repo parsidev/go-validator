@@ -1,9 +1,0 @@
-{
-  name: "Go Validator",
-  "dockerComposeFile": [
-    "../docker-compose.yml"
-  ],
-  service: "app",
-  workspaceFolder: "/workspace"
-}
-
